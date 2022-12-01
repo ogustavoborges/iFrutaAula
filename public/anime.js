@@ -1,3 +1,5 @@
+
+    
 var basicTimeline = anime.timeline({
     autoplay: false,
   });
@@ -27,7 +29,7 @@ var basicTimeline = anime.timeline({
     })
     .add({
       targets: ".progress-bar",
-      duration: 2000,
+      duration: 600,
       backgroundColor: "#58ce74",
       width: 300,
       easing: "linear"
@@ -55,18 +57,32 @@ var basicTimeline = anime.timeline({
     });
     
 
+    const timeElapsed = Date.now();
+    const today = new Date(timeElapsed);
+    var dia = today.toLocaleDateString()
+    var hora = today.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
+    var p = document.getElementById('data');
+    var s = document.getElementById('sucesso');
  
-  
   
   $(".button").click(function() {
     basicTimeline.play();
+    p.innerHTML = dia + ' às ' + hora+'.';
+    s.removeAttribute("hidden");
+    p.removeAttribute("hidden");
   });
 
   $(".text").click(function() {
     basicTimeline.play();
-  });
+    p.innerHTML = dia + ' às ' + hora+'.';
+    s.removeAttribute("hidden");
+    p.removeAttribute("hidden");
+  });s
 
   $("#svg").click(function() {
     basicTimeline.play();
+    p.innerHTML = dia + ' às ' + hora+'.';
+    s.removeAttribute("hidden");
+    p.removesAttribute("hidden");
   });
 

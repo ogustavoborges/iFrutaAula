@@ -24,6 +24,10 @@ body {
     box-shadow: 0 5px 8px rgb(0 0 0 / 10%), 0 10px 18px rgb(0 0 0 / 10%);
 }
 
+.mensagem{
+    margin-top: 300px;
+
+}
 
 input::placeholder {
     color: #dddfe2;
@@ -34,9 +38,14 @@ input::placeholder {
     flex-direction: column;
 }
 
+
+#sucesso,#data{
+    color: #404240;
+}
+
+
 .mensagem,
 #data {
-    color: #6a6868;
     padding: 5px;
 }
 
@@ -112,7 +121,7 @@ p,
 }
 
 
-h3 {
+#info_login {
     color: darkgrey;
     margin: 5px 12px 10px;
     font-size: 12pt;
