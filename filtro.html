@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel='stylesheet' type='text/css' media='screen' href="./public/main.css"></head>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+		<img id="logoif" src="./public/logo.png" alt="logo ifrs">
+		<a href="adm.html">voltar</a>
+	</header>
+
+    <form id="filtro">
+        <div>
+            <label for="turma">turma</label>
+            <select name="turma" id="turma"></select>
+        </div>
+        
+        <div>
+            <label for="periodo">periodo</label>
+            <select name="periodo" id="periodo"></select>
+        </div>
+        
+        <div>
+            <label for="curso">curso</label>
+            <select name="curso" id="curso"></select>
+        </div>
+        
+        
+        <div>
+            <label for="data-de">de</label>
+            <input type="date" name="data-de" id="data-de">
+
+            <label for="data-ate">ate</label>
+            <input type="date" name="data-ate" id="data-ate">
+        </div>
+
+        
+        <button type="submit">exportar csv</button>
+        <button type="submit">enviar</button>
+    </form>
+
+    <table id="retorno">
+
+        <tr>
+            <th>Aluno</th>
+            <th>Turma</th>
+            <th>Curso</th>
+            <th>Periodo</th>
+            <th>Data</th>
+        </tr>
+
+        <tr>
+            <td>teste</td>
+            <td>HDI</td>
+            <td>CVI</td>
+            <td>Manha</td>
+            <td>00/00/00</td>
+        </tr>
+        <tr>
+            <td>teste2</td>
+            <td>BD2</td>
+            <td>TSI</td>
+            <td>Noite</td>
+            <td>00/00/00</td>
+        </tr>
+
+    </table>
+</body>
+</html>
