@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel='stylesheet' type='text/css' media='screen' href="./public/main.css"></head>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+            <h1>iFruta Admin</h1>
+
+            <nav>
+                <a href="adm.html">Home</a>
+                <a href="/">Cardapio</a>
+                <a href="/">Registro de Lotes</a>
+            </nav>
+	</header>
+
+
+    
+<form id="filtro">
+    
+    <div id="cont-filtro">
+        <div class="selec">
+            <label for="turma">Turma</label>
+            <select name="turma" id="turma">
+                <option value="Manha">BD2</option>
+                <option value="Tarde">HDA</option>
+            </select>
+            
+        </div>
+        
+        <div class="selec">
+            <label for="periodo">Período</label>
+            <select name="periodo" id="periodo">
+                <option value="Manha">Manha</option>
+                <option value="Tarde">Tarde</option>
+                <option value="Noite">Noite</option>        
+            </select>
+        </div>
+        
+        <div class="selec">
+            <label for="curso">Curso</label>
+            <select name="curso" id="curso">
+                <option value="Manha">CVI</option>
+                <option value="Tarde">TSI</option>
+            </select>
+        </div>
+    </div>
+        
+    <div id="cont-data">
+        <div class="data">
+            <label for="data-de">De</label>
+            <input type="date" name="data-de" id="data-de">
+        </div>
+        <div class="data">
+            <label for="data-ate">Até</label>
+            <input type="date" name="data-ate" id="data-ate">
+        </div>
+    </div>
+
+    <div id="cont-btn">
+        <div id="align-btn">
+            <button type="submit">Exportar csv</button>
+            <button type="submit">Buscar</button>
+        </div>
+    </div>
+</form>
+
+
+    <table id="retorno">
+
+        <tr>
+            <th>Aluno</th>
+            <th>Turma</th>
+            <th>Curso</th>
+            <th>Periodo</th>
+            <th>Data</th>
+        </tr>
+
+        <tr>
+            <td>teste</td>
+            <td>HDA</td>
+            <td>CVI</td>
+            <td>Manha</td>
+            <td>00/00/00</td>
+        </tr>
+        <tr>
+            <td>teste2</td>
+            <td>BD2</td>
+            <td>TSI</td>
+            <td>Noite</td>
+            <td>00/00/00</td>
+        </tr>
+
+    </table>
+</body>
+</html>

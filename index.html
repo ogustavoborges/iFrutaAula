@@ -7,12 +7,31 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>iFruta</title>
 
+   <!-- import de icon para o botao float -->
+   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+   <!-- fim import de icon para o botao float -->
+   
    <link rel="stylesheet" href="./public/style.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Poppins:wght@200&display=swap"
       rel="stylesheet">
   
+   <!-- script para o popup (colocar no .js?) -->
+   <script>
+      $ = function(id) {
+      return document.getElementById(id);
+      }
+
+      var show = function(id) {
+         $(id).style.display ='block';
+      }
+      var hide = function(id) {
+         $(id).style.display ='none';
+      }
+   </script>
+   <!-- fim script para o popup -->
+   
 </head>
 
 <body id="body_login" onload="teste()">
@@ -32,8 +51,24 @@
 
       </div>
 
+      <!-- botao float -->
+      <a href="#"  onclick="show('popup2')">
+         <button class="float">
+            <i class='fas fa-apple-alt'></i>
+         </button>
+      </a>
+      <!-- fim botao float -->
 
    </section>
+   
+  <!-- popup hiden -->
+   <div class="popup" id="popup2">
+
+      <div id="popx"><a id="x" href="#" onclick="hide('popup2')">X</a></div>
+      <p id="poptxt">Cardapio do dia: <br> <span>Banana</span></p>
+
+   </div>
+   <!-- fim popup hiden -->
    <script src="./script.js"></script>
 
 </body>
