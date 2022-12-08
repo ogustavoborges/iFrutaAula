@@ -9,39 +9,66 @@
 </head>
 <body>
     <header>
-		<img id="logoif" src="./public/logo.png" alt="logo ifrs">
-		<a href="adm.html">voltar</a>
+            <h1>iFruta Admin</h1>
+
+            <nav>
+                <a href="adm.html">Home</a>
+                <a href="/">Cardapio</a>
+                <a href="/">Registro de Lotes</a>
+            </nav>
 	</header>
 
-    <form id="filtro">
-        <div>
-            <label for="turma">turma</label>
-            <select name="turma" id="turma"></select>
-        </div>
-        
-        <div>
-            <label for="periodo">periodo</label>
-            <select name="periodo" id="periodo"></select>
-        </div>
-        
-        <div>
-            <label for="curso">curso</label>
-            <select name="curso" id="curso"></select>
-        </div>
-        
-        
-        <div>
-            <label for="data-de">de</label>
-            <input type="date" name="data-de" id="data-de">
 
-            <label for="data-ate">ate</label>
+    
+<form id="filtro">
+    
+    <div id="cont-filtro">
+        <div class="selec">
+            <label for="turma">Turma</label>
+            <select name="turma" id="turma">
+                <option value="Manha">BD2</option>
+                <option value="Tarde">HDA</option>
+            </select>
+            
+        </div>
+        
+        <div class="selec">
+            <label for="periodo">Período</label>
+            <select name="periodo" id="periodo">
+                <option value="Manha">Manha</option>
+                <option value="Tarde">Tarde</option>
+                <option value="Noite">Noite</option>        
+            </select>
+        </div>
+        
+        <div class="selec">
+            <label for="curso">Curso</label>
+            <select name="curso" id="curso">
+                <option value="Manha">CVI</option>
+                <option value="Tarde">TSI</option>
+            </select>
+        </div>
+    </div>
+        
+    <div id="cont-data">
+        <div class="data">
+            <label for="data-de">De</label>
+            <input type="date" name="data-de" id="data-de">
+        </div>
+        <div class="data">
+            <label for="data-ate">Até</label>
             <input type="date" name="data-ate" id="data-ate">
         </div>
+    </div>
 
-        
-        <button type="submit">exportar csv</button>
-        <button type="submit">enviar</button>
-    </form>
+    <div id="cont-btn">
+        <div id="align-btn">
+            <button type="submit">Exportar csv</button>
+            <button type="submit">Buscar</button>
+        </div>
+    </div>
+</form>
+
 
     <table id="retorno">
 
@@ -55,7 +82,7 @@
 
         <tr>
             <td>teste</td>
-            <td>HDI</td>
+            <td>HDA</td>
             <td>CVI</td>
             <td>Manha</td>
             <td>00/00/00</td>
